@@ -28,9 +28,13 @@ flat_data = np.array(flat_data)
 target = np.array(target)
 images = np.array(images)
 
-print(flat_data[0])
+print(len(flat_data[0]))
 
 a = np.array([[1,2,3,4,5],
               [4,5,6,7,8]])
 a.ndim
 print(a.flatten())
+print(target)
+unique, count = np.unique(target, return_counts=True)
+print(unique)
+#plt.bar(CATEGORIES,count)
